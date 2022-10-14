@@ -1,0 +1,51 @@
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.spacer {
+    height: 2rem;
+}
+
+.experience-container > div {
+    grid-column: span 2;
+    background: #003a66;
+    padding: 2.4rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+}
+
+.experience-container>div h3 {
+    justify-content: center;
+    text-align: center;
+}
+
+.experience-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.experience-container2 > div {
+    grid-column: span 2;
+    grid-column-end: 4;
+    background: #003a66;
+    padding: 2.4rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 60px 50px;
+}
+
+.skill-slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skill-slider .item {
+    width: 50%;
+    margin: 0 auto 15px auto;
+}

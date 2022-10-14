@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './Navbar';
+import Cursor from './Cursor';
+import "./App.css";
+import {motion} from "framer-motion";
 
-function App() {
+import AnimatedRoutes from './AnimatedRoutes';
+
+
+//import { ScrollContainer } from 'react-scroll-motion';
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <motion.div
+        initial={{ x:"0" }}
+        animate={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30" } }}
+        exit={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30" } }}
+        className="privacy-screen"
+      />
+      <motion.div 
+        initial={{ x:"-100%" }}
+        animate={{ x: 0, transition: { duration: 1.5, type: "spring", stiffness:"30"} }}
+        exit={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30"}}}
+        className="container"
+      >
+        <Navbar></Navbar>
+        <AnimatedRoutes></AnimatedRoutes>
+        <Cursor></Cursor> 
+      </motion.div>
+      {/* ^ might have to do some prop passing here into the cursor */}
+    </>
   );
 }
 

@@ -1,0 +1,28 @@
+*{
+    cursor: none;
+}
+
+.inner-cursor {
+    position: fixed;
+    left: 10px;
+    width: 13px;
+    height: 13px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+    position: fixed;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+}
