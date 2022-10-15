@@ -11,6 +11,7 @@
     background-color: white;
     border-radius: 50%;
     pointer-events: none;
+    cursor: none;
     transition: width 0.5s, height 0.5s;
 }
 
@@ -24,5 +25,6 @@
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
+    cursor: none;
     transition: width 0.5s, height 0.5s;
 }

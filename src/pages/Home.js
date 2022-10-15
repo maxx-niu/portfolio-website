@@ -1,6 +1,6 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import { Github, Linkedin } from "react-bootstrap-icons";
+import { Github, Linkedin, FileText } from "react-bootstrap-icons";
 import { useState, useEffect } from 'react';
 import "./Home.css"
 
@@ -43,16 +43,15 @@ const Home = () => {
 
   return (
       <motion.div
-      initial={{ x:"-100%" }}
-      animate={{ x: 0, transition: { duration: 1.5, type: "spring", stiffness:"30"} }}
-      exit={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30"}}}
-      className="banner">
-            <div>
+      className="container">
+            <div className="banner">
               <span className='tagline'>Welcome</span>
-              <h1>{`Hi! I'm Max, `}<span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
+              <h1>{`Hi! I'm Max,`}</h1>
+              <h1><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
               <p>I study Computer Engineering at Waterloo.</p>
-              <a href="https://github.com/maxx-niu" target="_blank"><button><Github size={25}/></button></a>
-              <a href="https://www.linkedin.com/in/max-n/" target="_blank"><button><Linkedin size={25}/></button></a>
+              <a href="" target="_blank" rel="noreferrer"><button><FileText size={25}/>Resume</button></a>
+              <a href="https://github.com/maxx-niu" target="_blank" rel="noreferrer"><button><Github size={25}/></button></a>
+              <a href="https://www.linkedin.com/in/max-n/" target="_blank" rel="noreferrer"><button><Linkedin size={25}/></button></a>
             </div>
       </motion.div>
   )

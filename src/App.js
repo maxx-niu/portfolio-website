@@ -15,15 +15,14 @@ const App = () => {
     <>
       <motion.div
         initial={{ x:"0" }}
-        animate={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30" } }}
-        exit={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30" } }}
+        animate={{ x:"100%", transition: { duration: 2, type: "spring", stiffness:"30" } }}
+        exit={{ x:"100%", transition: { duration: 2, type: "spring", stiffness:"30" } }}
         className="privacy-screen"
       />
       <motion.div 
         initial={{ x:"-100%" }}
         animate={{ x: 0, transition: { duration: 1.5, type: "spring", stiffness:"30"} }}
         exit={{ x:"100%", transition: { duration: 1.5, type: "spring", stiffness:"30"}}}
-        className="container"
       >
         <Navbar></Navbar>
         <AnimatedRoutes></AnimatedRoutes>

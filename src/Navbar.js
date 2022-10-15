@@ -10,8 +10,8 @@ const Navbar = () => {
       <Link to="/"><img src={logo} alt="" id="logo-svg"/></Link>
         <ul>
             <li><Link to="/about-me">About Me</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/resume">Resume</Link></li>
+            <li><Link to="/projects">Projects & Experiences</Link></li>
+            <li><Link to="/resume">Contact</Link></li>
         </ul>
     </nav>
     </>

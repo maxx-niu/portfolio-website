@@ -1,6 +1,6 @@
 .banner {
-    margin-top: 0;
-    padding: 250px 0 100px 50px;
+    margin: auto;
+    padding: 20vh 3% 0 3%;
     background-position: top center;
     background-size: cover;
 }
@@ -34,7 +34,7 @@
 }
 
 .banner button {
-    color: #fff;
+    color: black;
     font-weight: 700;
     font-size: 20px;
     margin-top: 20px;
@@ -42,8 +42,11 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 2.5em;
     height: 2em;
+}
+
+.banner a {
+    text-decoration: none;
 }
 
 .banner button svg {
