@@ -43,16 +43,17 @@ const Home = () => {
 
   return (
       <motion.div
-      className="container">
+          className="container">
             <div className="banner">
               <span className='tagline'>Welcome</span>
               <h1>{`Hi! I'm Max,`}</h1>
               <h1><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
               <p>I study Computer Engineering at Waterloo.</p>
-              <a href="" target="_blank" rel="noreferrer"><button><FileText size={25}/>Resume</button></a>
+              <a href="" target="_blank" rel="noreferrer"><button><FileText size={25}/>Resume (pls remember)</button></a>
               <a href="https://github.com/maxx-niu" target="_blank" rel="noreferrer"><button><Github size={25}/></button></a>
               <a href="https://www.linkedin.com/in/max-n/" target="_blank" rel="noreferrer"><button><Linkedin size={25}/></button></a>
             </div>
+            <div className="scroll-down"></div>
       </motion.div>
   )
 }

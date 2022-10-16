@@ -11,11 +11,12 @@ import "./AboutMe.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import portraitGoogle from "../assets/Bio_Portrait_Google.jpg"
+import portraitGoogle from "../assets/Bio_Portrait_Google.jpg";
+import UWLogo from "../assets/Waterloo_Engineering_Logo_vert_rev_rgb.png";
 
 const AboutMe = () => {
   const languages = ["HTML", "CSS", "JS", "C", "C++", "Python", "SQL", "Java", "Verilog", "MATLAB"];
-  const libraries_Frameworks = ["React", "DynamoDB", "API Gateway", "Lambda", "S3", "NodeJS", "Git", "MySQL", "Angular", "WordPress"];
+  const libraries_Frameworks = ["React", "DynamoDB", "API Gateway", "AWS Lambda", "S3", "NodeJS", "Git", "MySQL", "Angular", "WordPress"];
   const other = ["Figma", "Illustrator", "Photoshop", "Premiere"];
 
   const settings = {
@@ -43,8 +44,8 @@ const AboutMe = () => {
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         dots: false
       }
     }
@@ -76,9 +77,8 @@ const AboutMe = () => {
     <motion.div
         className="container"
         >
-        <div className="about-me-container">
-        <section id="experience">
-          <h2>Skills</h2>
+        <div className="spacer"></div>
+        <section id="portfolio">
           <div className="experience-container">
             <div className="languages">
               <h3>Programming Languages</h3>
@@ -94,7 +94,7 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="frameworks-libraries">
-              <h3>Frameworks and Libraries</h3>
+              <h3>Frameworks, Libraries and Tech</h3>
               <div className="experience-content">
                 <Slider className="skill-slider" {...settings}>
                   {libraries_Frameworks.map((language, i) => {
@@ -123,10 +123,8 @@ const AboutMe = () => {
                 </div>
               </div>
             </div>
-            
             <div className="bio-container">
             <div className="bio">
-              <span>
                 <h2>Bio</h2>
                 <p>
                 My full name is actually Maximus, but everyone just calls me Max for short. I'm currently
@@ -141,15 +139,24 @@ const AboutMe = () => {
                   Waterloo campus. Feel free to say hi if you ever meet me - I can give you some 
                   fitness tips!
                 </p>
-              </span>
             </div>
-            <div className="bio bio-image">
+            <div className="bio-image">
                 <img src={portraitGoogle} alt="portrait" />
+            </div>
+          </div>
+          <div className="education-container">
+            <div className="education-item">
+              <h2>Education</h2>
+              <h4>BASc Honors Computer Engineering | University of Waterloo</h4>
+              <h5>Sept. 2019 - Present</h5>
+              <h5>Notable Courses: Algorithms and Data Structures, Systems Programming and Concurrency, Real-time OS, Computer Networks, Databases, Compilers</h5>
+            </div>
+            <div className="education-item-img">
+              <img src={UWLogo} alt="UW Engineering Logo" />
             </div>
           </div>
           <div className="spacer"></div>
         </section>
-        </div>
     </motion.div>
   )
 }

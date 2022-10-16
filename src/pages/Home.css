@@ -3,6 +3,7 @@
     padding: 20vh 3% 0 3%;
     background-position: top center;
     background-size: cover;
+    position: relative;
 }
 
 .banner .tagline {
@@ -36,7 +37,7 @@
 .banner button {
     color: black;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
     letter-spacing: 0.8px;
     display: inline-flex;
@@ -49,13 +50,13 @@
     text-decoration: none;
 }
 
-.banner button svg {
+/* .banner button svg {
     display: block;
     font-size: 25px;
     transition: 0.3s ease-in-out;
     line-height: 1;
     color:#2b313b;
-}
+} */
 
 .banner button:hover {
     transform: scale(1.15);
@@ -63,4 +64,69 @@
 
 .txt-rotate>.wrap {
     border-right: 0.08em solid #666;
+}
+
+.scroll-down {
+    height: 55px;
+    width: 35px;
+    border: transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50px;
+    transition: all 400ms ease-in;
+}
+
+.scroll-down::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    height: 13px;
+    width: 13px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+}
+
+.scroll-down:hover {
+    transform: scale(1.15);
+    border: 1.2px solid rgba(255, 255, 255, 0.8);
+}
+
+.scroll-down::before {
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1.5s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-top: transparent;
+        border-left: transparent;
+    }
+    30% {
+        opacity: 1;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-top: transparent;
+        border-left: transparent;
+    }
+    60% {
+        opacity: 1;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-top: transparent;
+        border-left: transparent;
+    }
+    100% {
+        opacity: 0;
+        top: 75%;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-top: transparent;
+        border-left: transparent;
+    }
 }
