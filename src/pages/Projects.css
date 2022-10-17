@@ -29,8 +29,9 @@
 }
 
 .portfolio-item-image {
-    border-radius: 0.3rem;
     overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .portfolio-item-image img {
@@ -39,7 +40,7 @@
 }
 
 .portfolio-item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 1.2rem;
 }
 
 .cta {
