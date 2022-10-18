@@ -75,10 +75,11 @@ const AboutMe = () => {
 
   return (
     <motion.div
-        className="container"
+        className="container" id="about-me-container"
         >
-        <div className="spacer"></div>
         <section id="portfolio">
+          <h1>About Me</h1>
+          <h3>Skills</h3>
           <div className="experience-container">
             <div className="languages">
               <h3>Programming Languages</h3>
@@ -125,7 +126,7 @@ const AboutMe = () => {
             </div>
             <div className="bio-container">
             <div className="bio">
-                <h2>Bio</h2>
+                <h3>Bio</h3>
                 <p>
                 My full name is actually Maximus, but everyone just calls me Max for short. I'm currently
                 finishing up my 3rd year studying Computer Engineering here at uWaterloo.
@@ -146,7 +147,7 @@ const AboutMe = () => {
           </div>
           <div className="education-container">
             <div className="education-item">
-              <h2>Education</h2>
+              <h3>Education</h3>
               <h4>BASc Honors Computer Engineering | University of Waterloo</h4>
               <h5>Sept. 2019 - Present</h5>
               <h5>Notable Courses: Algorithms and Data Structures, Systems Programming and Concurrency, Real-time OS, Computer Networks, Databases, Compilers</h5>
@@ -155,7 +156,6 @@ const AboutMe = () => {
               <img src={UWLogo} alt="UW Engineering Logo" />
             </div>
           </div>
-          <div className="spacer"></div>
         </section>
     </motion.div>
   )

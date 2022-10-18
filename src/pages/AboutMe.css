@@ -4,6 +4,10 @@
     padding-right: 20px;
 }
 
+#about-me-container {
+    padding-top: 72px;
+}
+
 .experience-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -108,7 +112,7 @@
     border-radius: 1.3rem;
 }
 
-.bio h2 {
+.bio h3 {
     margin-top: 0;
     border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
@@ -123,7 +127,7 @@
     border-radius: 0.5rem;
 } */
 
-.education-container h2 {
+.education-container h3 {
     margin-top: 0;
     border-bottom: 1px solid #ddd;
     padding-bottom: 1rem;
@@ -204,7 +208,7 @@
     }
 }
 
-/* @media only screen and (max-width:880px){
+@media only screen and (max-width:768px){
     .experience-container {
         grid-template-columns: 1fr;
     }
@@ -216,7 +220,7 @@
     .experience-container2>div {
         grid-column: span 2;
     }
-} */
+}
 
 /* @media only screen and (max-width:564px) {
     .bio {

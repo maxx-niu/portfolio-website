@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
       <motion.div
-          className="container">
+          className="container" id="home-container">
             <div className="banner">
               <span className='tagline'>Welcome</span>
               <h1>{`Hi! I'm Max,`}</h1>
@@ -53,7 +53,7 @@ const Home = () => {
               <a href="https://github.com/maxx-niu" target="_blank" rel="noreferrer"><button><Github size={25}/></button></a>
               <a href="https://www.linkedin.com/in/max-n/" target="_blank" rel="noreferrer"><button><Linkedin size={25}/></button></a>
             </div>
-            <div className="scroll-down"></div>
+            <a href="#about-me-container" className="scroll-down-btn"><div className="scroll-down"></div></a>
       </motion.div>
   )
 }

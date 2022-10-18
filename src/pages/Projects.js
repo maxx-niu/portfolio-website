@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       title: "Portfolio Website",
-      description: "View the source code for this website here. Built with React and Framer Motion animation library. Hosted using and uses .... for contacting me",
+      description: "View the source code for this website here. Built with React and Framer Motion animation library. Hosted using and uses EmailJS for contacting me",
       imgURL: PortfolioSite,
       github: "https://github.com/maxx-niu/portfolio-website",
       id: 12
@@ -26,10 +26,11 @@ const Projects = () => {
 
     return (
     <motion.div
-    className="container"
+    className="container" id="projects-container"
     >
       <section id="portfolio">
-        <h2>Personal Projects</h2>
+        <h1>Projects & Experiences</h1>
+        <h3>Personal Projects</h3>
         <div className="portfolio-container">
           {
             projects.map(({title, description, imgURL, github, id}) => {
@@ -50,10 +51,9 @@ const Projects = () => {
           }
         </div>
         <div className="professional-experience-container">
-          <h2>Professional Experiences</h2>
+          <h3>Professional Experiences</h3>
           <Timeline></Timeline>
         </div>
-        <div className="spacer"></div>
       </section>
     </motion.div>
       )

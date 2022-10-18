@@ -12,6 +12,7 @@
     border-radius: 50%;
     pointer-events: none;
     cursor: none;
+    z-index: 1000;
 }
 
 .outer-cursor {
@@ -24,4 +25,19 @@
     border-radius: 50%;
     pointer-events: none;
     cursor: none;
+    z-index: 1000;
+}
+
+@media only screen and (max-width:768px) {
+    * {
+        cursor: pointer;
+    }
+
+    .outer-cursor {
+        display: none;
+    }
+
+    .inner-cursor {
+        display: none;
+    }
 }
