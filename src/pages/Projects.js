@@ -26,7 +26,7 @@ const Projects = () => {
 
     return (
     <motion.div
-    className="container" id="projects-container"
+    className="container" id="projects"
     >
       <section id="portfolio">
         <h1>Projects & Experiences</h1>
@@ -35,7 +35,7 @@ const Projects = () => {
           {
             projects.map(({title, description, imgURL, github, id}) => {
               return (
-                <a href={github} className="cta" key={id}>
+                <a href={github} target="_blank" rel="noreferrer" className="cta" key={id}>
                   <article className="portfolio-item">
                     <div className="portfolio-item-image">
                       <img src={imgURL} alt={title + " image"} />

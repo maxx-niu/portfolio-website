@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 import { Github, Linkedin, FileText } from "react-bootstrap-icons";
 import { useState, useEffect } from 'react';
 import "./Home.css"
+import Resume from "../assets/Resume New Format - 10-18-2022.pdf";
 
 const Home = () => {
   const [loopNumber, setLoopNumber] = useState(0);
@@ -43,13 +44,13 @@ const Home = () => {
 
   return (
       <motion.div
-          className="container" id="home-container">
+          className="container" id="home">
             <div className="banner">
               <span className='tagline'>Welcome</span>
               <h1>{`Hi! I'm Max,`}</h1>
               <h1><span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
               <p>I study Computer Engineering at Waterloo.</p>
-              <a href="" target="_blank" rel="noreferrer"><button><FileText size={25}/>Resume (pls remember)</button></a>
+              <a href={Resume} target="_blank" rel="noreferrer"><button><FileText size={25}/>Resume</button></a>
               <a href="https://github.com/maxx-niu" target="_blank" rel="noreferrer"><button><Github size={25}/></button></a>
               <a href="https://www.linkedin.com/in/max-n/" target="_blank" rel="noreferrer"><button><Linkedin size={25}/></button></a>
             </div>

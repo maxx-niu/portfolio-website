@@ -75,7 +75,7 @@ const AboutMe = () => {
 
   return (
     <motion.div
-        className="container" id="about-me-container"
+        className="container" id="about-me"
         >
         <section id="portfolio">
           <h1>About Me</h1>
