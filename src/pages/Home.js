@@ -54,7 +54,7 @@ const Home = () => {
               <a href="https://github.com/maxx-niu" target="_blank" rel="noreferrer"><button><Github size={25}/></button></a>
               <a href="https://www.linkedin.com/in/max-n/" target="_blank" rel="noreferrer"><button><Linkedin size={25}/></button></a>
             </div>
-            <a href="#about-me-container" className="scroll-down-btn"><div className="scroll-down"></div></a>
+            <a href="#about-me" className="scroll-down-btn"><div className="scroll-down"></div></a>
       </motion.div>
   )
 }

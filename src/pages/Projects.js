@@ -17,7 +17,7 @@ const Projects = () => {
     },
     {
       title: "Portfolio Website",
-      description: "View the source code for this website here. Built with React and Framer Motion animation library. Hosted using and uses EmailJS for contacting me",
+      description: "View the source code for this website here. Built with React and Framer Motion animation library. Hosted using Hostinger and uses EmailJS for contacting me",
       imgURL: PortfolioSite,
       github: "https://github.com/maxx-niu/portfolio-website",
       id: 12
